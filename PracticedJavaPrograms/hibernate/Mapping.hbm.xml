@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<!-- CITYNEW table is mapped to citynew class -->
+<class name="hibernate.Employee" table="EMP">
+	<id name="EmpId" column="id" type="integer">
+		<generator class="assigned"></generator>
+	</id>
+	<property name="EmpName" column="name" type="string"></property>
+	<property name="EmpCity" column="city" type="string"></property>
+	<property name="EmpState" column="state" type="string"></property>
+</class>
+
+<!-- CITY table is mapped to city class -->
+<class name="hibernate.EmployeeSalaryDetails" table="EmpSalaryDetails">
+	<id name="id" column="id" type="integer">
+		<generator class="assigned"></generator>
+	</id>
+	<property name="EmpSalary" column="salary" type="double"></property>
+</class>
+
+</hibernate-mapping>
