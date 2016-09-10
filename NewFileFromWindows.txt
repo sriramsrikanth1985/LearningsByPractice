@@ -1,3 +1,0 @@
-Hello
-This is the new file added from windows os to test the git feature
-Thats all from now....
